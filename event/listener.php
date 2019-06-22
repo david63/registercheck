@@ -39,7 +39,7 @@ class listener implements EventSubscriberInterface
 	/**
 	* Constructor for listener
 	*
-	* @param phpbb\language\language				$language	Language object
+	* @param \phpbb\language\language				$language	Language object
 	* @param \phpbb\template\template				$template	Template object
 	* @param \phpbb\controller\helper				$helper		Helper object
 	* @param \david63\registercheck\core\functions	$functions	Functions for the extension
