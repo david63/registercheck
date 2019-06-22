@@ -1,0 +1,11 @@
+david63_registercheck_check_name:
+    path: /registercheck/check_name/{username}
+    defaults: { _controller: david63.registercheck.controller:check_name }
+
+david63_registercheck_check_email:
+    path: /registercheck/check_email/{email}
+    defaults: { _controller: david63.registercheck.controller:check_email }
+
+david63_registercheck_check_passwords:
+    path: /registercheck/check_passwords/{passwords}
+    defaults: { _controller: david63.registercheck.controller:check_passwords }

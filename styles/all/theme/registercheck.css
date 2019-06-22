@@ -1,0 +1,19 @@
+/**
+* registercheck.css
+**/
+
+.item-available {
+	color: #009900;
+	font-weight: bold;
+	background: #B6EDB6;
+	border: thin solid;
+	padding: 1px 3px 3px;
+}
+
+.item-not-available {
+	color: #FF0000;
+	font-weight: bold;
+	background: #FFDBDB;
+	border: thin solid;
+	padding: 1px 3px 3px;
+}

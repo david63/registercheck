@@ -1,0 +1,26 @@
+imports:
+    - { resource: phpbb_tables.yml }
+
+services:
+    david63.registercheck.listener:
+        class: david63\registercheck\event\listener
+        arguments:
+            - '@language'
+            - '@template'
+            - '@controller.helper'
+            - '@david63.registercheck.core.functions'
+        tags:
+            - { name: event.listener }
+
+    david63.registercheck.controller:
+        class: david63\registercheck\controller\main_controller
+        arguments:
+            - '@dbal.conn'
+            - '@request'
+            - '@config'
+            - '%tables%'
+
+    david63.registercheck.core.functions:
+        class: david63\registercheck\core\functions
+        arguments:
+            - '@ext.manager'
