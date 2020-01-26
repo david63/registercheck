@@ -1,6 +1,3 @@
-imports:
-    - { resource: phpbb_tables.yml }
-
 services:
     david63.registercheck.listener:
         class: david63\registercheck\event\listener
