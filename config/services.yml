@@ -21,3 +21,6 @@ services:
         class: david63\registercheck\core\functions
         arguments:
             - '@ext.manager'
+
+    _defaults:
+        public: true
